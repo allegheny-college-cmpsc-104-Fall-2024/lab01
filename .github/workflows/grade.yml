@@ -1,0 +1,52 @@
+# Basic workflow
+name: Grade Reports
+
+# Controls when the action will run. Workflow begins with push or PR events.
+# Focuses on the main branch only.
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+# Create one single job. This job performs all necessary checks.
+jobs:
+  grade:
+    # Use the latest version of Ubuntu on Microsoft Azure.
+    runs-on: ubuntu-latest
+
+    # Define the workflow steps.
+    steps:
+      # Checkout the code of the repository.
+      - name: Check out Repository Code
+        uses: actions/checkout@v2
+
+      # Run the linting tool for Markdown files.
+      - name: Check Markdown
+        uses: DavidAnson/markdownlint-cli2-action@v4
+        with:
+          globs: |
+            *.md
+
+      # Run the spell checker.
+      - name: Check Spelling
+        uses: zwaldowski/cspell-action@v1
+        with:
+          paths: |
+            *.md
+          config: .github/cspell.json
+
+      # Check for TODO comments in files.
+      - name: Check for TODOs
+        run: |
+          ! grep -L "TODO" *.md
+
+      # Check minimum word count in report.md solutions.
+      - name: Check Minimum Word Count in report.md
+        run: |
+          word_count=$(wc -w < report.md)
+          min_word_count=300
+          if [ "$word_count" -lt "$min_word_count" ]; then
+            echo "Error: Not enough words in report.md. Minimum required is $min_word_count, found $word_count."
+            exit 1
+          fi
