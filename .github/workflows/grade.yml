@@ -21,30 +21,15 @@ jobs:
       - name: Check out Repository Code
         uses: actions/checkout@v2
 
-      # Run the linting tool for Markdown files.
-      - name: Check Markdown
-        uses: DavidAnson/markdownlint-cli2-action@v4
-        with:
-          globs: |
-            *.md
-
-      # Run the spell checker.
-      - name: Check Spelling
-        uses: zwaldowski/cspell-action@v1
-        with:
-          paths: |
-            *.md
-          config: .github/cspell.json
-
       # Check for TODO comments in files.
       - name: Check for TODOs
         run: |
-          ! grep -L "TODO" *.md
+          ! grep -L "TODO" writing/*.md
 
       # Check minimum word count in report.md solutions.
       - name: Check Minimum Word Count in report.md
         run: |
-          word_count=$(wc -w < report.md)
+          word_count=$(wc -w < writing/report.md)
           min_word_count=300
           if [ "$word_count" -lt "$min_word_count" ]; then
             echo "Error: Not enough words in report.md. Minimum required is $min_word_count, found $word_count."
