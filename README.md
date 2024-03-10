@@ -57,10 +57,10 @@ This lab assignment aims to introduce you to the concepts and operations of Git 
 
 ## Deliverables
 Please submit your work by pushing it to your GitHub Classroom repository.
-- You will modify the files `writing/git_command.md` and `writing/report.md` to respond questions in the document.
+- You will modify the files `writing/git_command.md` and `writing/reflection.md` to respond questions in the document.
 
 ## Project Assessment
-- **Report Quality (40%)**: The quality of the writing in `writing/report.md` will be assessed, focusing on clarity, structure, and adherence to the assignment guidelines.
+- **Report Quality (40%)**: The quality of the writing in `writing/reflection.md` will be assessed, focusing on clarity, structure, and adherence to the assignment guidelines.
 - **Git Command Proficiency (60%)**: Correctly answer questions related to Git commands in `writing/git_command.md`.
 
 ## Gator Grade

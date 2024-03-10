@@ -26,12 +26,12 @@ jobs:
         run: |
           ! grep -L "TODO" writing/*.md
 
-      # Check minimum word count in report.md solutions.
-      - name: Check Minimum Word Count in report.md
+      # Check minimum word count in reflection.md solutions.
+      - name: Check Minimum Word Count in reflection.md
         run: |
-          word_count=$(wc -w < writing/report.md)
+          word_count=$(wc -w < writing/reflection.md)
           min_word_count=300
           if [ "$word_count" -lt "$min_word_count" ]; then
-            echo "Error: Not enough words in report.md. Minimum required is $min_word_count, found $word_count."
+            echo "Error: Not enough words in reflection.md. Minimum required is $min_word_count, found $word_count."
             exit 1
           fi
