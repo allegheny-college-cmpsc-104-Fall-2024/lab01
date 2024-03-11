@@ -15,6 +15,12 @@ This lab assignment aims to introduce you to the concepts and operations of Git 
 - Internet connection for installation and documentation reference
 - Terminal (for macOS users) or Command Prompt (cmd) (for Windows users)
 
+## Learning Outcomes
+These assignment learning outcomes contribute to the following course learning outcomes described in the course syllabus:
+
+1. Describe and explain processes such as software installation or design for a variety of technical and non-technical audiences ranging from inexperienced to expert.
+2. Use professional-grade integrated development environments (IDEs), command-line tools, and version control systems to compose, edit, and deploy well-structured, web-ready documents and industry-standard documentation tools.
+
 ## Instructions
 
 ### Part 1: Writing
