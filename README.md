@@ -5,9 +5,7 @@ Assigned : Monday 2 September 2024
 
 Due : Friday 6 September 2024
 
-<p align="center">
-  <img src="https://github.com/allegheny-college-cmpsc-104-Fall-2024/lab01/blob/main/graphics/github-mark.png" alt="Lab 1 Assignment" width="250"/>
-</p>
+![Lab 1 Assignment](https://github.com/allegheny-college-cmpsc-104-Fall-2024/lab01/blob/main/graphics/github-mark2.png)
 
 ## Project Goals
 This lab assignment aims to introduce you to the concepts and operations of Git and GitHub. By the end of this lab, you should be able to install Git, configure it, perform basic Git operations such as creating repositories, adding files, checking status, committing changes, and understand how to work with branches.
