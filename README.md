@@ -6,7 +6,7 @@ Assigned : Monday 2 September 2024
 Due : Friday 6 September 2024
 
 <p align="center">
-  <img src="https://github.com/allegheny-college-cmpsc-104-Fall-2024/lab01/blob/main/graphics/github-mark.png" alt="Lab 1 Assignment" width="400"/>
+  <img src="https://github.com/allegheny-college-cmpsc-104-Fall-2024/lab01/blob/main/graphics/github-mark.png" alt="Lab 1 Assignment" width="250"/>
 </p>
 
 ## Project Goals
