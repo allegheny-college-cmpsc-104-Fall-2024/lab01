@@ -12,26 +12,45 @@ on:
 # Create one single job. This job performs all necessary checks.
 jobs:
   grade:
-    # Use the latest version of Ubuntu on Microsoft Azure.
-    runs-on: ubuntu-latest
+    # do not allow a grade to run for more than 10 minutes
+    timeout-minutes: 5
+    # Use the latest version of Ubuntu
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        # Performs all actions on different versions of Python
+        python-version: ["3.10"]
+        os: [ubuntu-latest]
 
     # Define the workflow steps.
     steps:
       # Checkout the code of the repository.
       - name: Check out Repository Code
-        uses: actions/checkout@v2
-
-      # Check for TODO comments in files.
-      - name: Check for TODOs
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      # Install pip
+      - name: Install Pip
+        if: always()
         run: |
-          ! grep -L "TODO" writing/*.md
-
-      # Check minimum word count in reflection.md solutions.
-      - name: Check Minimum Word Count in reflection.md
+          pip install -U pip
+          python -m pip install --user pipx
+      # Run GatorGrader: see config/gatorgrade.yml
+      - name: Run GatorGrader with GatorGrade
+        if: always()
+        run:  |
+          pip install gatorgrade
+          gatorgrade --config config/gatorgrade.yml
+      # Get the current time
+      - name: Get the Current Time
+        uses: josStorer/get-current-time@v2
+        if: always()
+        id: current-time
+        with:
+          format: YYYYMMDD-HH-mm-ss
+          utcOffset: "-05:00"
+      # Signify 10% Success if all steps passed
+      - name: Signify 10% Success
+        if: success()
         run: |
-          word_count=$(wc -w < writing/reflection.md)
-          min_word_count=300
-          if [ "$word_count" -lt "$min_word_count" ]; then
-            echo "Error: Not enough words in reflection.md. Minimum required is $min_word_count, found $word_count."
-            exit 1
-          fi
+          echo "All previous steps passed successfully, marking 10% completion."
