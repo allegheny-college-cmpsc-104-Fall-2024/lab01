@@ -1,12 +1,15 @@
 
 # Document Engineering (CMPSC 104) Lab 1 Assignment
+<p align="center">
+  <img src="https://github.com/allegheny-college-cmpsc-104-Fall-2024/lab01/blob/main/graphics/GitHub_Logo.png" alt="Lab 1 Assignment" width="200"/>
+</p>
 
 Assigned : Monday 2 September 2024
 
 Due : Friday 6 September 2024
 
 <p align="center">
-  <img src="https://github.com/allegheny-college-cmpsc-104-Fall-2024/lab01/blob/main/graphics/github-mark.png" alt="Lab 1 Assignment" width="200"/>
+  <img src="https://github.com/allegheny-college-cmpsc-104-Fall-2024/lab01/blob/main/graphics/github-mark.png" alt="Lab 1 Assignment" width="100"/>
 </p>
 
 ## Project Goals
