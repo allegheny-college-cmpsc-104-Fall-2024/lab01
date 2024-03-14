@@ -1,14 +1,30 @@
 
-# Document Engineering (CMPSC 104) Lab 1 Assignment
+# Lab 01 - Intro to Git
 
-Assigned : Monday 2 September 2024
-
-Due : Friday 6 September 2024
+## Timeline
+<table>
+  <thead>
+    <tr>
+      <td style="text-align:left;">Assigned</td>
+      <td style="text-align:left;">Monday 2 September 2024</td>
+    </tr>
+  </thead>
+  <tfoot>
+    <tr>
+      <td style="text-align:left; color: #9e3436;">Deadline</td>
+      <td style="text-align:left; color: #9e3436;">Friday 6 September 2024</td>
+    </tr>
+  </tfoot>
+</table>
 
 ![Lab 1 Assignment](https://github.com/allegheny-college-cmpsc-104-Fall-2024/lab01/blob/main/graphics/github-mark2.png)
 
 ## Project Goals
-This lab assignment aims to introduce you to the concepts and operations of Git and GitHub. By the end of this lab, you should be able to install Git, configure it, perform basic Git operations such as creating repositories, adding files, checking status, committing changes, and understand how to work with branches.
+- Install and configure Git
+- Create and manage repositories
+- Add files and check their status
+- Commit changes to a repository
+- Understand and work with Git branches
 
 ## Tools
 - A computer
@@ -23,43 +39,26 @@ These assignment learning outcomes contribute to the following course learning o
 
 ## Instructions
 
-### Part 1: Writing
-- **What is Version Control?** Write about version control systems and understand why they are crucial for developers. 
-- Understand the importance of the staging area in Git's workflow and why commit messages are important.
+### Part 1: Check a Git Setting
+Please verify that Git is installed on your machine and that your Git environment is correctly configured.
+- Execute `git --version` in Command Prompt (CMD)/Terminal to confirm your Git installation.
+- Run `git config --global user.name` in Command Prompt (CMD)/Terminal to verify your Git username.
 
-### Part 2: Installation and Configuration
-1. **Install Git**: Follow the instructions on [Git's official site](https://git-scm.com/downloads) to download and install Git for your operating system.
-2. **Configure Git**:
-    - Open Terminal (macOS) or cmd (Windows).
-    - Configure your user name with `git config --global user.name "Your Name"`.
-    - Configure your email address with `git config --global user.email "youremail@example.com"`.
+### Part 2: Git Commands
+- Please complete the TODOs in `writing/git_command.md` based on the information you gathered in the previous tasks.
 
-### Part 3: Creating a New Git Repository
-1. Create a new directory on your computer where you want to initialize a new Git repository.
-2. Open Terminal or cmd, navigate to the newly created directory.
-3. Initialize the repository with `git init`.
+### Part 3: Write about Version Control Systems
+1. **What is Version Control?** Understand why they are crucial for developers.
+2. Understand the importance of the staging area in Git's workflow and why commit messages are important.
 
-### Part 4: Adding Files and Committing Changes
-1. **Creating a File**: Inside the repository directory, create a new file named `firstLabAssigment.txt` and write "Hello, Git!" inside it.
-2. **Adding the File**:
-    - Use `git add hello.txt` to add the file to the staging environment.
-3. **Checking Status**:
-    - Use `git status` to see the status of the file.
-4. **Committing the File**:
-    - Commit the file to the repository with `git commit -m "First commit"`.
+### _Notes_: 
+- Within `writing/git_command.md` and `writing/reflection.md`, you will find several TODOs awaiting your completion. As you work, please ensure to remove all TODO markers. 
+- For this lab, GatorGrader will verify that all TODOs have been eliminated and that your submission includes a minimum of 300 words.
 
-### Part 5: Working with Branches
-1. **Creating a Branch**: Learn how to create a new branch using `git branch <branch-name>`.
-2. **Switching Branches**: Switch to your new branch with `git checkout <branch-name>`.
-3. **Merging Branches**: Merge changes from your branch back to the main branch with `git merge <branch-name>`.
-
-### Part 6: Exploring More Git Commands
-- View the commit history with `git log`.
-- Learn about more advanced Git features (optional).
-
-## Summary
-- Create a repository on GitHub and push your local repository to GitHub, including your branches.
-- Submit a report that includes your understanding of version control, Git, and the importance of the staging environment and commit process.
+## Resources
+- Git Documentation: https://git-scm.com/doc
+    - Pro Git book: https://git-scm.com/book/en/v2
+- Coursera: https://www.coursera.org/learn/introduction-git-github
 
 ## Deliverables
 Please submit your work by pushing it to your GitHub Classroom repository.
@@ -67,7 +66,8 @@ Please submit your work by pushing it to your GitHub Classroom repository.
 
 ## Project Assessment
 - **Report Quality (40%)**: The quality of the writing in `writing/reflection.md` will be assessed, focusing on clarity, structure, and adherence to the assignment guidelines.
-- **Git Command Proficiency (60%)**: Correctly answer questions related to Git commands in `writing/git_command.md`.
+- **Git Command Proficiency (50%)**: Correctly answer questions related to Git commands in `writing/git_command.md`.
+- **Achieve GatorGrader Compliance (10%)**: Successfully meets the criteria set by GatorGrader.
 
 ## Gator Grade
 ### GatorGrade Checks for Immediate Feedback
