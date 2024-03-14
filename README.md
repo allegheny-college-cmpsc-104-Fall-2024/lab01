@@ -4,16 +4,12 @@
 ## Timeline
 <table>
   <thead>
-    <tr>
       <td style="text-align:left;">Assigned</td>
       <td style="text-align:left;">Monday 2 September 2024</td>
-    </tr>
   </thead>
   <tfoot>
-    <tr>
-      <td style="text-align:left; color: #9e3436;">Deadline</td>
-      <td style="text-align:left; color: #9e3436;">Friday 6 September 2024</td>
-    </tr>
+      <td style="text-align:left; color: red;">Deadline</td>
+      <td style="text-align:left;">Friday 6 September 2024</td>
   </tfoot>
 </table>
 
