@@ -13,7 +13,7 @@
   </tfoot>
 </table>
 
-![Lab 1 Assignment](https://github.com/allegheny-college-cmpsc-104-Fall-2024/lab01/blob/main/graphics/github-mark2.png)
+![Lab 1 Assignment](https://github.com/allegheny-college-cmpsc-104-Fall-2024/lab01/blob/main/graphics/git-header.png)
 
 ## Project Goals
 - Install and configure Git
