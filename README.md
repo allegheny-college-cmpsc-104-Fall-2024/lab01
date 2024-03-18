@@ -25,7 +25,7 @@
 ## Tools
 - A computer
 - Internet connection for installation and documentation reference
-- Terminal (for macOS users) or Command Prompt (cmd) (for Windows users)
+- A GitHub account
 
 ## Learning Outcomes
 These assignment learning outcomes contribute to the following course learning outcomes described in the course syllabus:
