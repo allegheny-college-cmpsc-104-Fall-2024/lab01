@@ -80,9 +80,3 @@ Run git config --global user.name in Command Prompt (CMD)/Terminal to verify you
      ```
      TODO
      ```
-
-11. **How do you clone a repository from GitHub to your local machine?**
-    - Enter your command:
-      ```
-      TODO
-      ```

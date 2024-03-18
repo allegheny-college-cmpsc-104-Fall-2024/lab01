@@ -62,7 +62,7 @@ Please submit your work by pushing it to your GitHub Classroom repository.
 
 ## Project Assessment
 - **Report Quality (40%)**: The quality of the writing in `writing/reflection.md` will be assessed, focusing on clarity, structure, and adherence to the assignment guidelines.
-- **Git Command Proficiency (50%)**: Correctly answer questions related to Git commands in `writing/git_command.md`.
+- **Git Command Proficiency (50%)**: Correctly answer questions related to Git commands in `writing/git_command.md`. Each correct response is worth 5%.
 - **Achieve GatorGrader Compliance (10%)**: Successfully meets the criteria set by GatorGrader.
 
 ## Gator Grade
