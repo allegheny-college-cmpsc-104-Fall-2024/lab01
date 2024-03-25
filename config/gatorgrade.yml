@@ -22,7 +22,7 @@ setup: |
         fragment: TODO
         count: 0
         exact: true
-    - description: Write a minimum number of meaningful words (300) in the report
+    - description: Write a minimum number of meaningful words (300) in the reflection.md
       check: CountFileWords
       options:
         count: 300
