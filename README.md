@@ -41,9 +41,10 @@ Please verify that Git is installed on your machine and that your Git environmen
 - Run `git config --global user.name` in Command Prompt (CMD)/Terminal to verify your Git username.
 
 ### Part 2: Git Commands
-- Please complete the TODOs in `writing/git_command.md` based on the information you gathered in the previous tasks.
+- Please complete the TODOs in `writing/git_command.md` based on the information you gathered.
 
 ### Part 3: Write about Version Control Systems
+- Please complete the TODOs in `writing/reflection.md`
 1. **What is Version Control?** Understand why they are crucial for developers.
 2. Understand the importance of the staging area in Git's workflow and why commit messages are important.
 
@@ -53,8 +54,7 @@ Please verify that Git is installed on your machine and that your Git environmen
 
 ## Resources
 - Git Documentation: https://git-scm.com/doc
-    - Pro Git book: https://git-scm.com/book/en/v2
-- Coursera: https://www.coursera.org/learn/introduction-git-github
+    - Pro Git book: https://git-scm.com/book/en/v2, specifically chapters 1, 2, and 3. 
 
 ## Deliverables
 Please submit your work by pushing it to your GitHub Classroom repository.
