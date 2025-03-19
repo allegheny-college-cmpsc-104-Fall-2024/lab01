@@ -3,11 +3,9 @@
 Please add your responses to this file.
 
 ## Name
-[Your Name Here]
-
+Zhanybek(Johnny)
 ## GitHub Account Name
-[Your GitHub Name Here]
-
+Jsharsh33v
 ---
 
 Execute git --version in Command Prompt (CMD)/Terminal to confirm your Git installation.
@@ -16,67 +14,68 @@ Run git config --global user.name in Command Prompt (CMD)/Terminal to verify you
 1. **How do you configure your name and email address in Git?**
    - Enter your command:
      ```
-     TODO
+     git config --global user.name "Your Name"
+     git config --global user.email "youremail@example.com"
      ```
 
 2. **How do you confirm your Git installation version?**
    - Enter your command:
      ```
-     TODO
+     git --version
      ```
     - Record the output:
      ```
-     TODO
+     git version 2.46.0
      ```
 
 3. **How do you verify your Git global username?**
    - Enter your command:
      ```
-     TODO
+     git config --global user.name
      ```
    - Record the output:
      ```
-     TODO
+     Jsharsh33v
      ```
 
 4. **What command initializes a new Git repository?**
    - Enter your command:
      ```
-     TODO
+     git init 
      ```
 
 5. **How do you add a file to the staging area in Git?**
    - Enter your command:
      ```
-     TODO
+     git add <filename>
      ```
 
 6. **What command gives you the status of your current Git working directory?**
    - Enter your command:
      ```
-     TODO
+     git status
      ```
 
 7. **How do you commit changes in Git with a message?**
    - Enter your command:
      ```
-     TODO
+     git commit -m "Your commit message"
      ```
 
 8. **What is the command to create a new branch in Git?**
    - Enter your command:
      ```
-     TODO
+     git branch <branch-name>
      ```
 
 9. **How do you switch to a different branch in Git?**
    - Enter your command:
      ```
-     TODO
+     git switch <branch-name>
      ```
 
 10. **What is the Git command to merge two branches?**
    - Enter your command:
      ```
-     TODO
+     git merge <branch-name>
      ```
